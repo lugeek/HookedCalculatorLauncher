@@ -19,6 +19,9 @@
 6. 打开关于计算器，展示的弹窗已经被hook
 ![8](https://raw.githubusercontent.com/lugeek/HookedCalculatorLauncher/master/imgs/a8%202020-09-24%2019.48.15.png)
 
+7. 如果遇到下图的问题，可以删除`/Users/xxx/Library/Developer/Xcode/DerivedData/xxx`对应的那个工程文件
+![9](https://raw.githubusercontent.com/lugeek/HookedCalculatorLauncher/master/imgs/a9%202020-09-26%2023.15.26.png)
+
 ### 注意
 在 macOS 10.12之后，默认开启了SIP(System Integrity Protection)，DYLD_INSERT_LIBRARIES这种方式行不通了，需要将SIP关闭之后才可以，关闭方式如下：
 1. Restart your computer
