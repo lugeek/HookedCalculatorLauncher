@@ -24,10 +24,11 @@
 
 ### 注意
 在 macOS 10.12之后，默认开启了SIP(System Integrity Protection)，DYLD_INSERT_LIBRARIES这种方式行不通了，需要将SIP关闭之后才可以，关闭方式如下：
-1. Restart your computer
-2. Boot to recovery partition by holding (Command [⌘] +  R)
-3. Open terminal from the menubar
-4. Enter this command:`csrutil disable`
+1. Open Terminal.app and run the command `sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true`.
+2. Restart your computer
+3. Boot to recovery partition by holding (Command [⌘] +  R)
+4. Open terminal from the menubar
+5. Enter this command:`csrutil disable` or `csrutil enable --without debug --without fs`
 
 ### 参考
 1. [macOS 逆向之生成动态注入 App](https://blog.nswebfrog.com/2018/02/09/make-injection-app-for-mac/)
